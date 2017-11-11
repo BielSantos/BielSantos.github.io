@@ -5,18 +5,18 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Nov 2017 19:57:39 -0300</pubDate>
-    <lastBuildDate>Sat, 11 Nov 2017 19:57:39 -0300</lastBuildDate>
+    <pubDate>Sat, 11 Nov 2017 20:07:48 -0300</pubDate>
+    <lastBuildDate>Sat, 11 Nov 2017 20:07:48 -0300</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Resenha</title>
         <description>layout: post
-title:  Hello World!
-date:   2015-01-14 15:00:00
+title: Resenha
+date:   2017-11-11 15:00:00
 ---
-&lt;h2&gt;Jekyllti&lt;/h2&gt;
-&lt;p&gt;Y Love You World s3&lt;/p&gt;</description>
+&lt;h2&gt;Arquitetura von Neumman vs Arquitetura Havard&lt;/h2&gt;
+&lt;p&gt; &lt;/p&gt;</description>
         <pubDate>Sat, 11 Nov 2017 00:00:00 -0300</pubDate>
         <link>/2017/11/11/resenha.html</link>
         <guid isPermaLink="true">/2017/11/11/resenha.html</guid>
