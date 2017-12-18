@@ -5,29 +5,50 @@ date: 2017-11-11 15:00:00
 <h1>Arquitetura Von Neumman vs Arquitetura Havard</h1>
 
 <h2>Arquitetura Von Neumman</h2>
-<p>No inicio da Computação não existia o conceito de programa armazenado, os programas eram desenvolvidos, executados e apresentavam<br> os resultados imediatamente. A ideia de computador de programa armazenado mudou tudo isso, somente alguns computadores ainda<br> utilizam programação fixa, para fins especificos, sendo mais comum hoje em dia ser utilizado arquitetetura de von neumman que tem como <br>conceito a programação armazenada estando presente em praticamente todos os projetos de computadores atuais.<br>
+
+<p>No inicio da Computação não existia o conceito de programa armazenado, os programas eram desenvolvidos, executados e apresentavam<br> os resultados imediatamente. A ideia de computador de programa armazenado mudou tudo isso, somente alguns computadores ainda<br> utilizam programação fixa, para fins especificos, sendo mais comum hoje em dia ser utilizado arquitetetura de von neumman que tem como <br>conceito a programação armazenada, estando presente em praticamente todos os projetos de computadores atuais.<br>
 </p>
 <p>    
 John Von Neumann e outros pesquisadores descobriram que, utilizando dispositivos de memória, poderiam armazenar instruções de programas.    
-Esse modelo de arquitetura de computador digital proposto por Von Neumann está baseado em três premissas<br> ou características básicas:<br>
- -Dados e as instruções ficam armazenadas no mesmo espaço de memória;<br>
- -Cada espaço de memória possui um endereço, o qual será utilizado para identificar a posição de um determinado conteúdo;<br>
- -Instruções são executadas de forma sequencial.   <br>
+Esse modelo de arquitetura proposto por Von Neumann é baseado em três características básicas:<br><p>
+ <ul>
+ <li>Dados e as instruções ficam armazenadas no mesmo espaço de memória;</li>
+ <li>Cada espaço de memória possui um endereço, o qual será utilizado para identificar a posição de um determinado conteúdo;</li>
+ <li>Instruções são executadas de forma sequencial.</li>
+ </ul> 
+<p>A arquitetura de Von Neumann é composta por: <br>Memória;<br> CPU, que contém os registradores<br> Unidade aritmética e lógica<br> Unidade de Controle (CU);<br> E ainda os dispositivos de entrada e saída para comunicação com o meio externo.
 <img src="Arquitetura_de_von_Neumann.png"/><br>
-A arquitetura de Von Neumann é composta por: Memória; CPU, que contém os registradores, Unidade aritmética e lógica, e Unidade de Controle (CU);<br> E ainda os dispositivos de entrada e saída para comunicação com o meio externo.
-
-Os componentes do modelo de Von Neumann comunicam-se através de uma estrutura interna conhecida como barramento, que operam a velocidades altíssimas interligando os principais componentes do modelo.    
+Os componentes do modelo de Von Neumann comunicam-se através do barramento, no qual operam em velocidades altíssimas interligando os principais componentes do modelo.    
 </p>
 
+<h4>Ciclo de execução da máquina de Von Neumann</h4>
+<p></p>
+<h4>Gargalo de Von Neumann<h4>
+    <p><p>
+    
+<h4>Uso da arquiterura de Von Neumman</h4>
+    <p>Exemplos de microprocessadores baseados em arquitetura Von Neumann:<br>
+ARM7 e Pentium</p>
+    
+    
 <h2>Arquitetura Harvard</h2>
-<p>A arquitetura de Havard surgiu durante a guerra mundial e veio com a proposta de tornar o trabalho do microcontrolador mais rapido, utilizando duas memorias diferentes.</p>
-
+<p>A arquitetura de Havard surgiu durante a guerra mundial, vindo com a proposta de tornar o trabalho do microcontrolador mais rapido, utilizando duas memorias diferentes. A partir do computador Harvard Mark I surgiu o conceito de arquitetura Harvard e, em seguida, houve um desenvolvimento significativo com essa arquitetura.</p>
+A principal função desta arquitetura é separar e armazenar fisicamente os dados e dar as vias de sinal para instruções e dados.
 
 <img src="arquitetura-de-Harvard.jpg">
 
+    
+<h4>Uso da arquitetura Harvad</h4>
+    <p>Exemplos de microprocessadores baseados em arquitetura Harvard:<br>
+ARM9 e SHARC (DSP)</p>
 <h2>Arquitetura Von Neumman vs Arquitetura Harvard</h2>
-
-<p></p>
+<h4>Diferenças</h4>
+<p>Harvard</p>
+    <lu>
+        <li>Memórias separadas para dados e instruções</li>
+        <li>Dois barramentos de endereço/dados entre CPU e memória.</li>
+        <li>Cpu pode ler uma instrução e executar uma  um acesso </li>
+    </lu>
 <p>Os microcontroladores com arquitetura Havard são conhecidos como microcontroladores RISC (Computador com Conjunto Reduzido de Instruções), e os microcontroladores com uma arquitetura Von-Neumann, microcontroladores CISC (Computador com um Conjunto Complexo de Instruções). porém atualmente não existe tanto essa diferenciação das linhas CISC e RISC, já que os processadores atuais tem instruções complexas ao mesmo tempo que buscam minimizar o tempo de execução.</p>
 
 
