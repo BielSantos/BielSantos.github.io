@@ -6,17 +6,15 @@ date: 2017-11-11 15:00:00
 
 <h2>Arquitetura de Von Neumman</h2>
 
-<p>No inicio da Computação não existia o conceito de programa armazenado, os programas eram desenvolvidos, executados e apresentavam<br> os resultados imediatamente. A ideia de computador de programa armazenado mudou tudo isso, somente alguns computadores ainda<br> utilizam programação fixa, para fins especificos, sendo mais comum hoje em dia ser utilizado arquitetetura de von neumman que tem como <br>conceito a programação armazenada, estando presente em praticamente todos os projetos de computadores atuais.<br>
+<p>&nbsp;No inicio da Computação não existia o conceito de programa armazenado, os programas eram desenvolvidos, executados e apresentavam<br> os resultados imediatamente. A ideia de computador de programa armazenado mudou tudo isso, somente alguns computadores ainda<br> utilizam programação fixa, para fins especificos, sendo mais comum hoje em dia ser utilizado arquitetetura de von neumman que tem como <br>conceito a programação armazenada, estando presente em praticamente todos os projetos de computadores atuais.<br>
 </p>
-<p>    
-John Von Neumann e outros pesquisadores descobriram que, utilizando dispositivos de memória, poderiam armazenar instruções de programas.    
-Esse modelo de arquitetura proposto por Von Neumann é baseado em três características básicas:<br><p>
+<p>&nbsp;John Von Neumann e outros pesquisadores descobriram que, utilizando dispositivos de memória, poderiam armazenar instruções de programas.Esse modelo de arquitetura proposto por Von Neumann é baseado em três características básicas:<br><p>
  <ul>
  <li>Dados e as instruções ficam armazenadas no mesmo espaço de memória;</li>
  <li>Cada espaço de memória possui um endereço, onde é utilizado para identificar a posição de um conteúdo;</li>
  <li>Instruções são executadas de forma sequencial.</li>
  </ul> 
-<p>A arquitetura de Von Neumann é composta por: 
+<p>&nbsp;A arquitetura de Von Neumann é composta por: 
 <ul>   
     <li>Memória</li> 
     <li>CPU</li>
@@ -26,48 +24,48 @@ Esse modelo de arquitetura proposto por Von Neumann é baseado em três caracter
 </ul>
 
     <img src="Arquitetura_de_von_Neumann.png"/><br>
-Os componentes do modelo de Von Neumann comunicam-se através do barramento, no qual opera em velocidades altíssimas interligando os principais componentes do modelo.    
+&nbsp;Os componentes do modelo de Von Neumann comunicam-se através do barramento, no qual opera em velocidades altíssimas interligando os principais componentes do modelo.    
 </p>
 
 <h4>Ciclo de execução da máquina de Von Neumann</h4>
-<p>O ciclo de execução da máquina de Von Neumman é bem simples, ocorre a busca de uma instrução, depois decodifica e a executa.<br> como ilustrado no fruxograma abaixo:</p>
+<p>&nbsp;O ciclo de execução da máquina de Von Neumman é bem simples, ocorre a busca de uma instrução, depois decodifica e a executa.<br> como ilustrado no fruxograma abaixo:</p>
 <img src="ciclo.jpg">
 
 <h4>Gargalo de Von Neumann<h4>
     <p><p>
     
 <h4>Uso da arquiterura de Von Neumman</h4>
-    <p>Exemplos de microprocessadores baseados em arquitetura Von Neumann:<br>
+    <p>&nbsp;Exemplos de microprocessadores baseados em arquitetura Von Neumann:<br>
 ARM7 e Pentium</p>
     
     
 <h2>Arquitetura Harvard</h2>
-<p>A arquitetura de Havard surgiu durante a guerra mundial, vindo com a proposta de tornar o trabalho do microcontrolador mais rapido, utilizando duas memorias diferentes. O conceito de arquitetura Harvard surgiu partir do computador Harvard Mark I e, em seguida, houve um desenvolvimento significativo com essa arquitetura.</p>
+<p>&nbsp;A arquitetura de Havard surgiu durante a guerra mundial, vindo com a proposta de tornar o trabalho do microcontrolador mais rapido, utilizando duas memorias diferentes. O conceito de arquitetura Harvard surgiu partir do computador Harvard Mark I e, em seguida, houve um desenvolvimento significativo com essa arquitetura.</p>
 A principal função desta arquitetura é separar e armazenar fisicamente os dados e dar as vias de sinal para instruções e dados.
 
 <img src="arquitetura-de-Harvard.jpg">
 
 <h4>Uso da arquitetura Harvad</h4>
-    <p>Exemplos de microprocessadores baseados em arquitetura Harvard:<br>
+    <p>&nbsp;Exemplos de microprocessadores baseados em arquitetura Harvard:<br>
 ARM9 e SHARC (DSP)</p>
 <h2>Conclusão</h2>
     
-<p>Essas duas arquiteturas tem como principais diferenças na sua organização e arquitetura, a arquitetura havard possui dois barramentos separados de dados e instruções, isso permite que as transferências sejam realizadas em ambos barramentos simultaneamente, enquanto a arquitetura de Von Neumman possui apenas um barramento que é utilizado para transferências de dados e busca de instruções, ou seja as buscas de instruções não podem ser realizadas ao mesmo tempo.
+<p>&nbsp;Essas duas arquiteturas tem como principais diferenças na sua organização e arquitetura, a arquitetura havard possui dois barramentos separados de dados e instruções, isso permite que as transferências sejam realizadas em ambos barramentos simultaneamente, enquanto a arquitetura de Von Neumman possui apenas um barramento que é utilizado para transferências de dados e busca de instruções, ou seja as buscas de instruções não podem ser realizadas ao mesmo tempo.
 A seguir mais algumas diferenças entre as duas arquitetura:</p>
 <h4>Harvard</h4>
-    <lu>
+    <ul>
         <li>Memórias separadas para dados e instruções</li>
         <li>Dois barramentos de endereço/dados entre CPU e memória.</li>
         <li>Cpu pode ler uma instrução e executar uma  um acesso à memória de dados simultaneamente.</li>
         <li> O processador pode completar uma instrução em um ciclo se as estratégias de pipeline adequadas forem implementadas.</li>
-    </lu>
+    </ul>
     
 <h4>Von Neumman</h4>
     <ul>
         <li>A arquitetura de Von Neumann usa os mesmos barramentos para instruções e dados.</li>
         <li>Possui o mesmo conjunto barramentos de dados e de endereços para instruções de leitura/gravação de memória e busca.</li>
 
-        <li>A CPU só pode ler uma instrução ou escrever dados para a memória. Ambos não podem ocorrer ao mesmo tempo, pois as instruções e os dados utilizam o mesmo barramento.</li>
+        <li>A CPU só pode ler uma instrução ou escrever dados para a memória.<br> Ambos não podem ocorrer ao mesmo tempo, pois as instruções e os dados utilizam o mesmo barramento.</li>
         <li>Possui o mesmo endereço de dados e o endereço da instrução.</li>
 
    </ul>
