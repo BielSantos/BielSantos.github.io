@@ -1,12 +1,26 @@
-layout: post
-title: Resenha
-date: 2017-11-11 15:00:00
----
-<h1>Arquitetura de Von Neumman vs Arquitetura Havard</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Resenha</title>
+<link type="text/css" rel="stylesheet" media="screen" href="estilo.css" />
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="site">
+
+<div id="header">
+    <H1>OAC</H1>
+    
+    
+    </div>
+<div id="conteudo">
+    <h1>Arquitetura de Von Neumman vs Arquitetura Havard</h1>
 
 <h2>Arquitetura de Von Neumman</h2>
 
-<p>&nbsp;No inicio da Computação não existia o conceito de programa armazenado, os programas eram desenvolvidos, executados e apresentavam<br> os resultados imediatamente. A ideia de computador de programa armazenado mudou tudo isso, somente alguns computadores ainda<br> utilizam programação fixa, para fins especificos, sendo mais comum hoje em dia ser utilizado arquitetetura de von neumman que tem como <br>conceito a programação armazenada, estando presente em praticamente todos os projetos de computadores atuais.<br>
+<p>&nbsp;No inicio da Computação não existia o conceito de programa armazenado, os programas eram desenvolvidos, executados e apresentavam<br> os resultados imediatamente. A ideia de computador de programa armazenado mudou tudo isso, somente alguns computadores ainda<br> utilizam programação fixa, para fins especificos, sendo mais comum hoje em dia ser utilizado arquitetetura de von neumman que tem como <br>conceito a programação armazenada.<br>
 </p>
 <p>&nbsp;John Von Neumann e outros pesquisadores descobriram que, utilizando dispositivos de memória, poderiam armazenar instruções de programas.Esse modelo de arquitetura proposto por Von Neumann é baseado em três características básicas:<br><p>
  <ul>
@@ -16,11 +30,11 @@ date: 2017-11-11 15:00:00
  </ul> 
 <p>&nbsp;A arquitetura de Von Neumann é composta por: 
 <ul>   
-    <li>Memória</li> 
-    <li>CPU</li>
-    <li>Unidade aritmética e lógica</li>  
-    <li>Unidade de Controle</li>  
-    <li>Dispositivos de entrada e saída</li>
+    <li><b>Memória</b> consiste em Ram, conhecida como memória principal , a RAM é dividida em partições. Onde cada uma consiste em um endereços(identificará de forma cada local na memória) e seus conteúdos.</li> 
+    <li><b>CPU</b> (unidade de Processamento Central) é o circuito eletrônico que fica responsável pela execução das instruções de um programa.</li>
+    <li><b>Unidade aritmética e lógica</b> que permite operações aritméticas e lógica </li>  
+    <li><b>Unidade de Controle</b> (UC)  que controla as operações dos dispositivos ULA, memória e entrada/saída.</li>  
+    <li><b>Dispositivos de entrada e saída</b></li>
 </ul>
 
     <img src="Arquitetura_de_von_Neumann.png"/><br>
@@ -31,14 +45,16 @@ date: 2017-11-11 15:00:00
 <p>&nbsp;O ciclo de execução da máquina de Von Neumman é bem simples, ocorre a busca de uma instrução, depois decodifica e a executa.<br> como ilustrado no fruxograma abaixo:</p>
 <img src="ciclo.jpg">
 
-<h4>Gargalo de Von Neumann<h4>
+    <h4>Gargalo de Von Neumann</h4>
+    <p>É a limitação na taxa de transferência entre a cpu e a memória, a transferência é menor do que a taxa com que o processador consegue trabalhar e menor do que a quantidade de memória disponível, isso força a CPU esperar por dados que precisam ser transferidos para ou a partir de outra memórias.</p>
     <p>O gargalo de Von Neumman refere-se ao tráfego no barramento<p>
     <ul><li>Vai endereço da instrução volta instrução</li>
     <li>Vão endereços dos operandos</li>
     <li>Vão e voltam operandos</li>    
     </ul>
     <p>Para elinar gargalo: diminuir tráfego de informações</p>
-    <ul><li>Manter informações na CPU</li>
+    <ul>
+        <li>Manter informações na CPU</li>
         <li>Diminuir tamanho em bits das informações transferidas</li>
         <li>Inclusão de registradores</li>
     </ul>
@@ -48,8 +64,9 @@ ARM7 e Pentium</p>
     
     
 <h2>Arquitetura Harvard</h2>
-<p>&nbsp;A arquitetura de Havard surgiu durante a guerra mundial, vindo com a proposta de tornar o trabalho do microcontrolador mais rapido, utilizando duas memorias diferentes. O conceito de arquitetura Harvard surgiu partir do computador Harvard Mark I e, em seguida, houve um desenvolvimento significativo com essa arquitetura.</p>
-A principal função desta arquitetura é separar e armazenar fisicamente os dados e dar as vias de sinal para instruções e dados.
+<p>&nbsp;A arquitetura de Havard surgiu durante a guerra mundial e veio com a proposta de tornar o trabalho do microcontrolador mais rapido, utilizando duas memorias diferentes. O nome arquitura harvad vem do computador Mark I. É utilizada  nos microcontroladores PIC e tem como característica o acesso a memória de dados de modo separado em relação a memória de programa e também na separação de barramentos, tendo o barramento de onde estão as instruções de programa e das memórias de dados, dessa forma permite que o processador possa acessar as duas simultaneamente, por meio do qual obtem um desenpenho melhor do que a arquitetura de Von Neumman, pois pode buscar uma nova instrução enquanto executa outra.
+Outra grande característica da arquitetura harvarde é por possuir um repertório com menos instuções que a de Von Neumann e são executadas com a apenas um ciclo de clock.</p>
+
 
 <img src="arquitetura-de-Harvard.jpg">
 
@@ -77,6 +94,14 @@ A seguir mais algumas diferenças entre as duas arquitetura:</p>
         <li>Possui o mesmo endereço de dados e o endereço da instrução.</li>
 
    </ul>
-<h2>Referências</h2> 
+
+</div>
+<div id="footer">
+    <h2>Referências</h2> 
 <h4>STALLINGS, William. Arquitetura e Organização de Computadores. 5ª ed. São Paulo: Pearson Prentice Hall, 2010.</h4>
 <h4>TANENBAUM, Andrew S. Organização Estruturada de Computadores. 5ª ed. São Paulo: Pearson Prentice Hall, 2010.</h4>
+    
+</div>
+</div>
+</body>
+    </html>    
