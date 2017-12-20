@@ -4,16 +4,15 @@
 	/* altura da div */
 	height:100px;
 	/* Cor de fundo da div */
-	background-color:#0000FF;
-    font: 25px Arial, Helvetica, sans-serif; 
+	background-color:#B5B5B5;
+    font: 25px .saas-cache; 
 	}
 #conteudo{
 	/*Novamente definimos a largura da div*/
 	width:1500px;
 	/* altura da div */
 	height:2800px;
-	/* Cor de fundo da div */
-	background-color:#7A8B8B;	
+	
 }	
 #footer{
 	/*Novamente definimos a largura da div*/
